@@ -1,0 +1,26 @@
+# ──────────────────────────────────────────────────────────────
+# Unity default ignores (official template)
+# ──────────────────────────────────────────────────────────────
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+*.csproj
+*.sln
+*.unityproj
+*.DS_Store
+
+# ──────────────────────────────────────────────────────────────
+# IMPORTANT: Exclude ALL imported/3rd-party assets
+# Only keep custom code (Scripts) and minimal docs
+# ──────────────────────────────────────────────────────────────
+
+# Ignore everything in Assets except the folders we want
+Assets/*
+!Assets/Scripts/
+
