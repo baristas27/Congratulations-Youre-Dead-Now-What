@@ -17,11 +17,7 @@ In the afterlife, you become a temporary clerk in Purgatory's cold, bureaucratic
 
 ## Repository Contents
 - `Assets/Scripts/` — Custom game logic and core systems
-- `docs/` — Game Design Document, technical reviews, and changelog
-
-## Development Focus
-This repo contains only custom code and documentation.  
-Third-party assets (models, sounds, VFX packs) are excluded to keep the repository clean and focused on original work.
+- `docs/` — Game Design Document and technical reviews
 
 ## License
 MIT License
