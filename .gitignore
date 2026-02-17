@@ -1,6 +1,4 @@
-# ──────────────────────────────────────────────────────────────
-# Unity default ignores (official template)
-# ──────────────────────────────────────────────────────────────
+# Unity defaults from GitHub template
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -15,12 +13,10 @@
 *.unityproj
 *.DS_Store
 
-# ──────────────────────────────────────────────────────────────
-# IMPORTANT: Exclude ALL imported/3rd-party assets
-# Only keep custom code (Scripts) and minimal docs
-# ──────────────────────────────────────────────────────────────
-
-# Ignore everything in Assets except the folders we want
+# Senin özel eklerin (asset ignore'ları)
 Assets/*
 !Assets/Scripts/
-
+!Assets/Scenes/
+!Assets/Prefabs/
+!Assets/Materials/
+!Assets/Resources/
