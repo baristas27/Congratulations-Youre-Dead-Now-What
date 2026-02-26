@@ -22,6 +22,14 @@ public class InteractionManager : MonoBehaviour
     private float currentHoldDistance;
     private Quaternion initialRotationOffset;
 
+    public float objectRotationSpeed = 100f;
+    private float currentRotationInput;
+    private IReadable currentReadable;
+    
+    public void SetRotationInput(float input)
+    {
+        currentRotationInput = input;
+    }
     private void OnEnable()
     {
         interactAction.action.performed += OnInteractTriggered;
@@ -44,23 +52,77 @@ public class InteractionManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (heldObject != null) MoveHeldObject();
+        if (heldObject != null)
+        {
+            MoveHeldObject();
+            HandleObjectRotation();
+        }
+            
     }
 
-    // E TUŞU: SADECE BOOK EXAM TOGGLE
+    private void HandleObjectRotation()
+    {
+        if (Mathf.Abs(currentRotationInput) > 0.01f)
+        {
+            float rotationAmount = currentRotationInput * objectRotationSpeed * Time.fixedDeltaTime;
+            heldObject.transform.Rotate(Vector3.up, -rotationAmount, Space.World);
+
+            // So MoveHeldObject doesn't Slerp back: make the "target" include this rotation
+            initialRotationOffset = Quaternion.Inverse(mainCamera.transform.rotation) * heldObject.transform.rotation;
+        }
+    }
+    private void Update()
+    {
+        if (currentReadable == null)
+        {
+            Debug.Log("currentreadable null!");
+        }
+        ClearDestroyedReadable();
+
+        if (currentReadable != null)
+        {
+            if (Keyboard.current != null && Keyboard.current.dKey.wasPressedThisFrame)
+                currentReadable.NextPage();
+            else if (Keyboard.current != null && Keyboard.current.aKey.wasPressedThisFrame)
+                currentReadable.PreviousPage();
+        }
+    }
+
+    private void ClearDestroyedReadable()
+    {
+        if (currentReadable is MonoBehaviour mb && mb == null)
+            currentReadable = null;
+    }
+
     private void OnInteractTriggered(InputAction.CallbackContext context)
     {
+        ClearDestroyedReadable();
+
+        if (currentReadable != null)
+        {
+            currentReadable.Close();
+            currentReadable = null;
+            return;
+        }
         RaycastHit hit;
         if (Physics.Raycast(mainCamera.transform.position, mainCamera.transform.forward, out hit, interactionDistance, interactableLayer))
         {
-            var book = hit.collider.GetComponentInParent<IBookInteractable>();
-            book?.ToggleExamination();  // Direkt toggle, tracking yok
+            IReadable readable = hit.collider.GetComponentInParent<IReadable>();
+
+            if (readable != null)
+            {
+                currentReadable = readable; // memorize
+                currentReadable.Open();
+                return;
+            }
+
         }
     }
 
     // SOL TIK BAŞLANGIÇ: PICKUP AMA BOOK SKIP
     private void OnHoldStarted(InputAction.CallbackContext context)
     {
+        if (currentReadable != null) return;
         if (heldObject == null) HandleInteraction();
     }
 
@@ -76,9 +138,8 @@ public class InteractionManager : MonoBehaviour
         if (Physics.Raycast(mainCamera.transform.position, mainCamera.transform.forward, out hit, interactionDistance, interactableLayer))
         {
             // ÖNCE BOOK KONTROL: Varsa pickup'ı SKIP et (statik tut)
-            if (hit.collider.GetComponentInParent<IBookInteractable>() != null)
+            if (hit.collider.GetComponentInParent<IReadable>() != null)
             {
-                Debug.Log("Book tespit edildi, pickup skip edildi.");
                 return;  // Kitap pickup olmaz!
             }
 
@@ -122,6 +183,8 @@ public class InteractionManager : MonoBehaviour
 
         heldRigidbody.isKinematic = false;
         heldRigidbody.useGravity = true;
+        heldRigidbody.linearDamping = 0f;
+        heldRigidbody.angularDamping = 0.05f;
         heldRigidbody.AddForce(mainCamera.transform.forward * 1.5f, ForceMode.Impulse);
 
         heldObject = null;

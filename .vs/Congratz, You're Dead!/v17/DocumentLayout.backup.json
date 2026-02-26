@@ -1,0 +1,198 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF9E89-2ABA-1001-FFB1-29E899165946}|Assembly-CSharp.csproj|c:\\users\\kullan\u0131c\u0131\\congratz, you\u0027re dead!\\assets\\scripts\\interfaces\\bookinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF9E89-2ABA-1001-FFB1-29E899165946}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interfaces\\bookinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF9E89-2ABA-1001-FFB1-29E899165946}|Assembly-CSharp.csproj|C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\assets\\scripts\\interactions\\interactionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF9E89-2ABA-1001-FFB1-29E899165946}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interactions\\interactionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF9E89-2ABA-1001-FFB1-29E899165946}|Assembly-CSharp.csproj|C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\assets\\scripts\\interfaces\\ireadable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF9E89-2ABA-1001-FFB1-29E899165946}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interfaces\\ireadable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF9E89-2ABA-1001-FFB1-29E899165946}|Assembly-CSharp.csproj|C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF9E89-2ABA-1001-FFB1-29E899165946}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF9E89-2ABA-1001-FFB1-29E899165946}|Assembly-CSharp.csproj|C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\assets\\scripts\\interactions\\pickupitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF9E89-2ABA-1001-FFB1-29E899165946}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interactions\\pickupitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF9E89-2ABA-1001-FFB1-29E899165946}|Assembly-CSharp.csproj|C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\assets\\scripts\\interactions\\soulmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF9E89-2ABA-1001-FFB1-29E899165946}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interactions\\soulmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF9E89-2ABA-1001-FFB1-29E899165946}|Assembly-CSharp.csproj|C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\assets\\scripts\\gameplay\\soulappearance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF9E89-2ABA-1001-FFB1-29E899165946}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\soulappearance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF9E89-2ABA-1001-FFB1-29E899165946}|Assembly-CSharp.csproj|C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\assets\\scripts\\data\\souldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF9E89-2ABA-1001-FFB1-29E899165946}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\souldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF9E89-2ABA-1001-FFB1-29E899165946}|Assembly-CSharp.csproj|C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\assets\\scripts\\interfaces\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF9E89-2ABA-1001-FFB1-29E899165946}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interfaces\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF9E89-2ABA-1001-FFB1-29E899165946}|Assembly-CSharp.csproj|C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\assets\\scripts\\interfaces\\ipickable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF9E89-2ABA-1001-FFB1-29E899165946}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interfaces\\ipickable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Data\\SoulSlot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Data\\SoulSlot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IReadable.cs",
+              "DocumentMoniker": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Interfaces\\IReadable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interfaces\\IReadable.cs",
+              "ToolTip": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Interfaces\\IReadable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interfaces\\IReadable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T23:01:38.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InteractionManager.cs",
+              "DocumentMoniker": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Interactions\\InteractionManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interactions\\InteractionManager.cs",
+              "ToolTip": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Interactions\\InteractionManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interactions\\InteractionManager.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAIwFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T02:10:16.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T01:42:03.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookInteraction.cs",
+              "DocumentMoniker": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Interfaces\\BookInteraction.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interfaces\\BookInteraction.cs",
+              "ToolTip": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Interfaces\\BookInteraction.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interfaces\\BookInteraction.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAArwC4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T01:44:59.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SoulAppearance.cs",
+              "DocumentMoniker": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Gameplay\\SoulAppearance.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\SoulAppearance.cs",
+              "ToolTip": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Gameplay\\SoulAppearance.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\SoulAppearance.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwEEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T01:41:28.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SoulSlot.cs",
+              "DocumentMoniker": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Data\\SoulSlot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\SoulSlot.cs",
+              "ToolTip": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Data\\SoulSlot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Data\\SoulSlot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T00:45:30.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SoulManager.cs",
+              "DocumentMoniker": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Interactions\\SoulManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interactions\\SoulManager.cs",
+              "ToolTip": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Interactions\\SoulManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interactions\\SoulManager.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowD8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T00:05:27.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SoulData.cs",
+              "DocumentMoniker": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Data\\SoulData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\SoulData.cs",
+              "ToolTip": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Data\\SoulData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Data\\SoulData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T00:06:46.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PickUpItem.cs",
+              "DocumentMoniker": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Interactions\\PickUpItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interactions\\PickUpItem.cs",
+              "ToolTip": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Interactions\\PickUpItem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interactions\\PickUpItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T02:23:26.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IInteractable.cs",
+              "DocumentMoniker": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Interfaces\\IInteractable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interfaces\\IInteractable.cs",
+              "ToolTip": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Interfaces\\IInteractable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interfaces\\IInteractable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T17:48:08.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IPickable.cs",
+              "DocumentMoniker": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Interfaces\\IPickable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interfaces\\IPickable.cs",
+              "ToolTip": "C:\\Users\\Kullan\u0131c\u0131\\Congratz, You\u0027re Dead!\\Assets\\Scripts\\Interfaces\\IPickable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interfaces\\IPickable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T17:47:27.745Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

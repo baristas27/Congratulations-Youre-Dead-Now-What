@@ -805,7 +805,7 @@ Transform:
   m_GameObject: {fileID: 463030247}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.34628, y: 1.76, z: 10.23804}
+  m_LocalPosition: {x: -6.34628, y: 3.59, z: 10.23804}
   m_LocalScale: {x: 1, y: 2.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -825,13 +825,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fbfec4f9f3f69d489d32953e721bd8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  interactionManager: {fileID: 1038940078}
+  playerCamera: {fileID: 330585545}
+  moveAction: {fileID: -3220501846330714212, guid: 1ea0e941c95d2b24b84ae9f655184583, type: 3}
+  lookAction: {fileID: -3991703301908548501, guid: 1ea0e941c95d2b24b84ae9f655184583, type: 3}
+  rotateAction: {fileID: 5873885665410197445, guid: 1ea0e941c95d2b24b84ae9f655184583, type: 3}
   walkSpeed: 5
   gravity: -9.81
   canMove: 1
   mouseSensitivity: 2
   upperLookLimit: -80
   lowerLookLimit: 80
-  playerCamera: {fileID: 330585545}
 --- !u!143 &463030254
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1148,7 +1152,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35bd0d3b3574dca439d22bddb80c75bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BookInteraction
+  bookAnimator: {fileID: 721300145}
   examinationCamera: {fileID: 1961980249}
+  mainCamera: {fileID: 0}
+  transitionDuration: 0.75
+  transitionCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!95 &721300145
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721300142}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ba7fb00220429294e9879f610e190c4b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &790707428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1913,6 +1948,7 @@ MonoBehaviour:
   followSpeed: 40
   dragAmount: 15
   rotationSpeed: 20
+  objectRotationSpeed: 100
 --- !u!1 &1057355910
 GameObject:
   m_ObjectHideFlags: 0
@@ -2048,9 +2084,45 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 20802028060722405, guid: c5f21b09d82509241ace4272288d970e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 613776244646497496, guid: c5f21b09d82509241ace4272288d970e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 968992256194928154, guid: c5f21b09d82509241ace4272288d970e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2373578213822934066, guid: c5f21b09d82509241ace4272288d970e, type: 3}
+      propertyPath: m_Center.y
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 2373578213822934066, guid: c5f21b09d82509241ace4272288d970e, type: 3}
+      propertyPath: m_Center.z
+      value: -0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 3859225719582418380, guid: c5f21b09d82509241ace4272288d970e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7163637935385168186, guid: c5f21b09d82509241ace4272288d970e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7340970277697129654, guid: c5f21b09d82509241ace4272288d970e, type: 3}
       propertyPath: m_Name
       value: MagicBook_Fixed
+      objectReference: {fileID: 0}
+    - target: {fileID: 7340970277697129654, guid: c5f21b09d82509241ace4272288d970e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560470157087964657, guid: c5f21b09d82509241ace4272288d970e, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7974622864066663948, guid: c5f21b09d82509241ace4272288d970e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2062,7 +2134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7974622864066663948, guid: c5f21b09d82509241ace4272288d970e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.716998
+      value: 11.69
       objectReference: {fileID: 0}
     - target: {fileID: 7974622864066663948, guid: c5f21b09d82509241ace4272288d970e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2092,6 +2164,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -87.898
       objectReference: {fileID: 0}
+    - target: {fileID: 8067542342406535613, guid: c5f21b09d82509241ace4272288d970e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067542342406535613, guid: c5f21b09d82509241ace4272288d970e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067542342406535613, guid: c5f21b09d82509241ace4272288d970e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067542342406535613, guid: c5f21b09d82509241ace4272288d970e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2099,6 +2187,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7340970277697129654, guid: c5f21b09d82509241ace4272288d970e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 721300144}
+    - targetCorrespondingSourceObject: {fileID: 7340970277697129654, guid: c5f21b09d82509241ace4272288d970e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 721300145}
   m_SourcePrefab: {fileID: 100100000, guid: c5f21b09d82509241ace4272288d970e, type: 3}
 --- !u!1001 &1221775888
 PrefabInstance:
@@ -3128,7 +3219,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1961980253}
   - component: {fileID: 1961980252}
-  - component: {fileID: 1961980251}
   - component: {fileID: 1961980250}
   m_Layer: 0
   m_Name: BookCam
@@ -3181,14 +3271,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!81 &1961980251
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1961980249}
-  m_Enabled: 1
 --- !u!20 &1961980252
 Camera:
   m_ObjectHideFlags: 0
