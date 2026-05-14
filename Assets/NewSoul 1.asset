@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb04fca9e99cd1942ba31dcdb4af841d, type: 3}
+  m_Name: NewSoul 1
+  m_EditorClassIdentifier: Assembly-CSharp::SoulData
+  soulName: Adrian Wells
+  age: 38
+  causeOfDeath: "Apartman yang\u0131n\u0131nda dumandan zehirlenme"
+  introDialogueSegments:
+  - "Merhaba... San\u0131r\u0131m do\u011Fru yere geldim."
+  - "Gece apartmanda yang\u0131n \xE7\u0131kt\u0131."
+  - "Ben zaten d\u0131\u015Far\u0131 \xE7\u0131km\u0131\u015Ft\u0131m asl\u0131nda."
+  - "Ama \xFC\xE7\xFCnc\xFC kattaki kom\u015Fumun k\xFC\xE7\xFCk k\u0131z\u0131n\u0131n
+    i\xE7eride kald\u0131\u011F\u0131n\u0131 s\xF6ylediler."
+  - "\u0130tfaiye hen\xFCz gelmemi\u015Fti."
+  - "Bir kez daha i\xE7eri girdim. \xC7ocu\u011Fu merdivenlere kadar getirdim."
+  - "Sonras\u0131n\u0131 pek hat\u0131rlam\u0131yorum... san\u0131r\u0131m duman
+    \xE7ok fazlayd\u0131."
+  - "Ama \xE7ocuk kurtuldu de\u011Fil mi?"
+  fileSummary: "Dosya No: 4821-A\n\nKonu: Adrian Wells, 38 ya\u015F\u0131nda. \xD6l\xFCm
+    nedeni yo\u011Fun dumana maruz kalma.\n\nOlay raporlar\u0131na g\xF6re s\xF6z
+    konusu ki\u015Fi, yang\u0131n s\u0131ras\u0131nda binadan g\xFCvenli \u015Fekilde
+    tahliye edildikten sonra tekrar i\xE7eri girmi\u015Ftir. Ama\xE7, \xFC\xE7\xFCnc\xFC
+    katta mahsur kalan bir \xE7ocu\u011Fu kurtarmakt\u0131r.\n\nTan\u0131k ifadeleri
+    ve itfaiye raporlar\u0131, ki\u015Finin \xE7ocu\u011Fu merdiven bo\u015Flu\u011Funa
+    kadar ula\u015Ft\u0131rmay\u0131 ba\u015Fard\u0131\u011F\u0131n\u0131 do\u011Frulamaktad\u0131r.
+    \xC7ocuk olaydan sa\u011F kurtulmu\u015Ftur.\n\nKi\u015Fi ise bina i\xE7erisinde
+    bilincini kaybetmi\u015F halde bulunmu\u015F ve dumandan zehirlenme sonucu hayat\u0131n\u0131
+    kaybetmi\u015Ftir.\n\nHerhangi bir su\xE7 kayd\u0131 bulunmamaktad\u0131r."
+  headIndex: -1
+  chestIndex: 2
+  armsIndex: 1
+  beltIndex: 1
+  legsIndex: 1
+  feetIndex: 1
+  noseIndex: 1
+  hairIndex: 1
+  faceHairIndex: 1
+  eyesIndex: 1
+  eyebrowsIndex: 1
+  earsIndex: 1
+  belongsInHeaven: 1
+  inspectionPoints: []
+  evidence:
+    evidencePrefab: {fileID: 0}
+    evidenceTitle: 
+    initialDescription: 
+    hasHiddenDetail: 0
+    revealedDetailText: 
+    clerkCleanMonologue: 
+    vagueReactions: []

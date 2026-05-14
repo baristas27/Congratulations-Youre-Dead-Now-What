@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb04fca9e99cd1942ba31dcdb4af841d, type: 3}
+  m_Name: NewSoul 2
+  m_EditorClassIdentifier: Assembly-CSharp::SoulData
+  soulName: Elias Vorn
+  age: 52
+  causeOfDeath: "Fabrika yang\u0131n\u0131 s\u0131ras\u0131nda ezilme ve dumandan
+    bo\u011Fulma"
+  introDialogueSegments:
+  - "Ben sadece d\xFCzeni korumaya \xE7al\u0131\u015F\u0131yordum"
+  - "\u0130nsanlar panikledi\u011Finde herkes birbirini ezer. Birinin kontrol\xFC
+    eline almas\u0131 gerekir"
+  - "O acil \xE7\u0131k\u0131\u015F kap\u0131s\u0131 \xE7\xF6kecek gibiydi. Herkesi
+    oraya y\xF6nlendiremezdim."
+  - "Ben hayatta kald\u0131m diye su\xE7lu oldum"
+  - "\xC7irkin bir karar verdim belki\u2026 ama gerekliydi"
+  fileSummary: "Elias Vorn, Ardent Tekstil\u2019de vardiya sorumlusu olarak \xE7al\u0131\u015F\u0131yordu.
+    Fabrika yang\u0131n\u0131 s\u0131ras\u0131nda \xE7al\u0131\u015Fanlar\u0131 yan
+    acil \xE7\u0131k\u0131\u015Ftan uzakla\u015Ft\u0131rd\u0131\u011F\u0131 ve bu
+    karar\u0131n baz\u0131 ki\u015Filerin i\xE7eride mahsur kalmas\u0131na yol a\xE7t\u0131\u011F\u0131
+    rapor edildi. Tan\u0131k ifadeleri, Elias\u2019\u0131n insanlar\u0131 korumaya
+    m\u0131 \xE7al\u0131\u015Ft\u0131\u011F\u0131 yoksa \xF6nce kendi hayat\u0131n\u0131
+    m\u0131 kurtard\u0131\u011F\u0131 konusunda \xE7eli\u015Fmektedir."
+  headIndex: -1
+  chestIndex: 0
+  armsIndex: -1
+  beltIndex: -1
+  legsIndex: -1
+  feetIndex: -1
+  noseIndex: 0
+  hairIndex: -1
+  faceHairIndex: -1
+  eyesIndex: 2
+  eyebrowsIndex: -1
+  earsIndex: -1
+  belongsInHeaven: 0
+  inspectionPoints: []
+  evidence:
+    evidencePrefab: {fileID: 0}
+    evidenceTitle: 
+    initialDescription: 
+    hasHiddenDetail: 0
+    revealedDetailText: 
+    clerkCleanMonologue: 
+    vagueReactions: []

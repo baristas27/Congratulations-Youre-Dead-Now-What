@@ -1,31 +1,26 @@
 # ──────────────────────────────────────────────────────────────
-# Unity default ignores (standard template)
+# Unity default ignores
 # ──────────────────────────────────────────────────────────────
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Uu]ser[Ss]ettings/
-/[Mm]emoryCaptures/
-/[Rr]ecordings/
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# Visual Studio / Rider
 *.csproj
 *.sln
 *.unityproj
-*.DS_Store
 
-# ──────────────────────────────────────────────────────────────
-# IMPORTANT: IGNORE EVERYTHING IN Assets EXCEPT Scripts
-# (only custom code will be tracked – no imported assets)
-# ──────────────────────────────────────────────────────────────
+# Large third-party demo/terrain content
+Assets/EmaceArt/Forest Meadows/Scenes/WoodLand_AdditiveScenes/
+Assets/EmaceArt/Forest Meadows/TerrainData/ResourceFiles/
 
-# Ignore all of Assets...
-Assets/*
-
-# ...but explicitly INCLUDE only Scripts (and optionally others)
-!Assets/Scripts/
-!Assets/Scenes/
-# !Assets/Prefabs/
-# !Assets/Materials/
-# !Assets/Resources/
+# OS files
+.DS_Store
+Thumbs.db

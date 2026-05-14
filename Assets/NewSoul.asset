@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb04fca9e99cd1942ba31dcdb4af841d, type: 3}
+  m_Name: NewSoul
+  m_EditorClassIdentifier: Assembly-CSharp::SoulData
+  soulName: 23123123
+  age: 11
+  causeOfDeath: 123123123123
+  headIndex: 0
+  chestIndex: 0
+  armsIndex: -1
+  beltIndex: -1
+  legsIndex: 0
+  feetIndex: 0
+  noseIndex: -1
+  hairIndex: -1
+  faceHairIndex: -1
+  eyesIndex: 0
+  eyebrowsIndex: -1
+  earsIndex: -1
+  belongsInHeaven: 0

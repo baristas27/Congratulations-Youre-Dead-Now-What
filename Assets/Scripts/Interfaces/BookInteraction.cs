@@ -7,18 +7,17 @@ public class BookInteraction : MonoBehaviour, IReadable
 {
 
     [SerializeField] private Animator bookAnimator;
-    [Header("Camera Settings")]
-    public GameObject examinationCamera;
-    public Camera mainCamera;
-    private Vector3 originalPosition;
-    private Quaternion originalRotation;
 
-    [Header("Transition Settings")]
-    public float transitionDuration = 0.75f;
-    public AnimationCurve transitionCurve;
+
+
+
+    [SerializeField] private Transform examinationCameraTarget;
+    [SerializeField] private PlayerPresentationStateMachine presentationStateMachine;
+
+
 
     private bool isExamining = false;
-    private PlayerController player;
+
 
     private int totalPages = 2;
     private int currentPage = 0;
@@ -26,12 +25,8 @@ public class BookInteraction : MonoBehaviour, IReadable
 
     private void Start()
     {
-        player = FindAnyObjectByType<PlayerController>();
-        mainCamera = Camera.main;
-        if (examinationCamera) examinationCamera.SetActive(false);
-
-        if (transitionCurve == null || transitionCurve.keys.Length == 0)
-            transitionCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
+        if (presentationStateMachine == null)
+            presentationStateMachine = FindAnyObjectByType<PlayerPresentationStateMachine>();
     }
 
     public void Open()
@@ -41,7 +36,8 @@ public class BookInteraction : MonoBehaviour, IReadable
         isExamining = true;
         hasOpenedCover = false;
 
-        StartCoroutine(EnterExaminationCoroutine());
+        if (presentationStateMachine != null)
+            presentationStateMachine.EnterBookExamination(examinationCameraTarget);
     }
 
     public void Close()
@@ -51,10 +47,11 @@ public class BookInteraction : MonoBehaviour, IReadable
         isExamining = false;
         hasOpenedCover = false;
 
-        StartCoroutine(ExitExaminationCoroutine());
-
         if (bookAnimator)
             bookAnimator.SetBool("isOpen", false);
+
+        if (presentationStateMachine != null)
+            presentationStateMachine.ExitBookExamination();
     }
 
     public void NextPage()
@@ -94,57 +91,7 @@ public class BookInteraction : MonoBehaviour, IReadable
             Open();
     }
 
-    private IEnumerator EnterExaminationCoroutine()
-    {
-        if (player) player.canMove = false;
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+  
 
-        originalPosition = mainCamera.transform.position;
-        originalRotation = mainCamera.transform.rotation;
-
-        float elapsed = 0f;
-
-        while (elapsed < transitionDuration)
-        {
-            elapsed += Time.deltaTime;
-            float t = elapsed / transitionDuration;
-            float curveValue = transitionCurve.Evaluate(t);
-
-            mainCamera.transform.position = Vector3.Lerp(originalPosition, examinationCamera.transform.position, curveValue);
-            mainCamera.transform.rotation = Quaternion.Lerp(originalRotation, examinationCamera.transform.rotation, curveValue);
-
-            yield return null;
-        }
-        mainCamera.transform.position = examinationCamera.transform.position;
-        mainCamera.transform.rotation = examinationCamera.transform.rotation;
-
-        if (mainCamera) mainCamera.enabled = false;
-        examinationCamera.SetActive(true);
-    }
-
-    private IEnumerator ExitExaminationCoroutine()
-    {
-        examinationCamera.SetActive(false);
-        if (mainCamera) mainCamera.enabled = true;
-
-        float elapsed = 0f;
-
-        while (elapsed < transitionDuration)
-        {
-            elapsed += Time.deltaTime;
-            float t = elapsed / transitionDuration;
-            float curveValue = transitionCurve.Evaluate(t);
-
-            mainCamera.transform.position = Vector3.Lerp(examinationCamera.transform.position, originalPosition, curveValue);
-            mainCamera.transform.rotation = Quaternion.Lerp(examinationCamera.transform.rotation, originalRotation, curveValue);
-            yield return null;
-        }
-        mainCamera.transform.position = originalPosition;
-        mainCamera.transform.rotation = originalRotation;
-
-        if (player) player.canMove = true;
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-    }
+ 
 }

@@ -73,11 +73,15 @@ public class InteractionManager : MonoBehaviour
     }
     private void Update()
     {
-        if (currentReadable == null)
-        {
-            Debug.Log("currentreadable null!");
-        }
         ClearDestroyedReadable();
+
+        if (currentReadable != null && Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            currentReadable.Close();
+            currentReadable = null;
+            return;
+        }
+
 
         if (currentReadable != null)
         {
